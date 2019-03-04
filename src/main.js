@@ -1,16 +1,17 @@
-import Vue from 'vue';
-import { Picker } from 'vant';
-import App from './App.vue';
-import router from './router';
-import store from './store';
-import './assets/styles/global.scss';
+import Vue from 'vue'
+import iView from 'iview'
+import 'iview/dist/styles/iview.css'
+import App from './App.vue'
+import router from './router'
+import store from './store'
+import './assets/styles/global.scss'
 
+Vue.use(iView)
 
-Vue.use(Picker);
-Vue.config.productionTip = false;
+Vue.config.productionTip = false
 
 new Vue({
   router,
   store,
-  render: h => h(App),
-}).$mount('#app');
+  render: h => h(App)
+}).$mount('#app')
